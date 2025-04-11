@@ -37,6 +37,9 @@ public class Main
     		    System.out.println("Enter the prefix string");
     		    String inp=sc.nextLine();
     		    solver(root,li,inp);
+    		    if(li.size()==0){
+    		        System.out.println("There are no words with this prefix in trie currently!!");
+    		    }
     		    for(String temp:li){
     		        System.out.println(temp);
     		    }
